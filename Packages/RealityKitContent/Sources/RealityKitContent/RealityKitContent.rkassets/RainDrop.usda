@@ -1,0 +1,37 @@
+#usda 1.0
+
+def Xform "RainDropTransform" (
+    active = true
+)
+{
+    def Sphere "RainDropMesh" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        reorder nameChildren = ["RainDropMaterial", "Transform"]
+        rel material:binding = </RainDropTransform/RainDropMesh/RainDropMaterial>
+        double radius = 0.01
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Material "RainDropMaterial"
+        {
+            token outputs:mtlx:surface
+            token outputs:realitykit:vertex
+            prepend token outputs:surface.connect = </RainDropTransform/RainDropMesh/RainDropMaterial/DefaultSurfaceShader.outputs:surface>
+
+            def Shader "DefaultSurfaceShader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (1, 1, 1)
+                float inputs:opacity = 0.2
+                float inputs:roughness = 0
+                token outputs:surface
+            }
+        }
+    }
+}
+

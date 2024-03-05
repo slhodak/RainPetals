@@ -1,23 +1,5 @@
 {
   "0A9B4653-B11E-4D6A-850E-C6FCB621626C" : {
-    "cameraTransform" : [
-      1,
-      0,
-      0,
-      0,
-      0,
-      0.86602545,
-      -0.49999994,
-      0,
-      0,
-      0.49999994,
-      0.86602545,
-      0,
-      0.0035969093,
-      0.35542378,
-      0.62919164,
-      1
-    ],
     "objectMetadataList" : [
       [
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
@@ -29,25 +11,103 @@
       }
     ]
   },
+  "1A12F42E-5AB3-42F5-B2F1-08ABC799AFD9" : {
+    "objectMetadataList" : [
+      [
+        "1A12F42E-5AB3-42F5-B2F1-08ABC799AFD9",
+        "Rose_Petals_05"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "02D0B62E-EAC1-4D16-AA42-108FAAF4E1D0" : {
+    "objectMetadataList" : [
+      [
+        "02D0B62E-EAC1-4D16-AA42-108FAAF4E1D0",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "7C87B00B-896A-4684-A606-742A3D071CDA" : {
+    "objectMetadataList" : [
+      [
+        "7C87B00B-896A-4684-A606-742A3D071CDA",
+        "RainDropTransform",
+        "RainDropMesh"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "7C87B00B-896A-4684-A606-742A3D071CDA",
+        "Root",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "7C87B00B-896A-4684-A606-742A3D071CDA",
+        "RainDropTransform"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "7C87B00B-896A-4684-A606-742A3D071CDA",
+        "Root",
+        "Sphere",
+        "DefaultMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "7C87B00B-896A-4684-A606-742A3D071CDA",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "42ABD1D7-6BD8-436C-8C3A-34EA7A78B3D7" : {
+    "objectMetadataList" : [
+      [
+        "42ABD1D7-6BD8-436C-8C3A-34EA7A78B3D7",
+        "Rose_Petals_05"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "45EE2336-55E5-4910-B995-FD6F00140F8A" : {
+    "objectMetadataList" : [
+      [
+        "45EE2336-55E5-4910-B995-FD6F00140F8A",
+        "Rose_Petals_08"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
   "65F6F990-A780-4474-B78B-572E0E4E273D" : {
-    "cameraTransform" : [
-      1,
-      0,
-      -0,
-      0,
-      -0,
-      0.86602545,
-      -0.49999988,
-      0,
-      0,
-      0.49999988,
-      0.86602545,
-      0,
-      1.1972517e-08,
-      2.6179132,
-      0.43191218,
-      1
-    ],
     "objectMetadataList" : [
       [
         "65F6F990-A780-4474-B78B-572E0E4E273D",
@@ -59,25 +119,55 @@
       }
     ]
   },
+  "74A96C8A-D201-4F5E-AD52-C65AA474EF3F" : {
+    "objectMetadataList" : [
+      [
+        "74A96C8A-D201-4F5E-AD52-C65AA474EF3F",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "15456FC8-2F15-4578-AAAE-A6A0EBDB092F" : {
+    "objectMetadataList" : [
+      [
+        "15456FC8-2F15-4578-AAAE-A6A0EBDB092F",
+        "Rose_Petals_07"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "20825F09-EDC4-450E-B603-4A8E206FD587" : {
+    "objectMetadataList" : [
+      [
+        "20825F09-EDC4-450E-B603-4A8E206FD587",
+        "Rose_Petals_03"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "48904DD6-BD47-434E-9F9B-8299B0F02B80" : {
+    "objectMetadataList" : [
+      [
+        "48904DD6-BD47-434E-9F9B-8299B0F02B80",
+        "Rose_Petals_04"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
   "66168B71-AB05-424E-8B6C-D33D6E61B08F" : {
-    "cameraTransform" : [
-      1,
-      0,
-      -0,
-      0,
-      -0,
-      0.8660254,
-      -0.5,
-      0,
-      0,
-      0.5,
-      0.8660254,
-      0,
-      0,
-      0.23875366,
-      0.4135335,
-      1
-    ],
     "objectMetadataList" : [
       [
         "66168B71-AB05-424E-8B6C-D33D6E61B08F",
@@ -90,24 +180,6 @@
     ]
   },
   "AF09ED6F-1707-48FD-8720-65B998362C09" : {
-    "cameraTransform" : [
-      1,
-      0,
-      -0,
-      0,
-      -0,
-      0.7071069,
-      -0.7071067,
-      0,
-      0,
-      0.7071067,
-      0.7071069,
-      0,
-      0,
-      2.8836339,
-      -0.107588194,
-      1
-    ],
     "objectMetadataList" : [
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
@@ -137,26 +209,40 @@
       }
     ]
   },
-  "CB766F92-EE55-4A63-9401-E7B8C009764D" : {
-    "cameraTransform" : [
-      1,
-      0,
-      -0,
-      0,
-      -0,
-      0.8660253,
-      -0.5000001,
-      0,
-      0,
-      0.5000001,
-      0.8660253,
-      0,
-      0,
-      0.27093494,
-      0.4692731,
-      1
-    ],
+  "C1908C35-8BC0-42E1-BAC9-B6DC4AABA3C4" : {
     "objectMetadataList" : [
+      [
+        "C1908C35-8BC0-42E1-BAC9-B6DC4AABA3C4",
+        "Rose_Petals_06"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "CA343C62-9115-45EC-878E-EA5457582B86" : {
+    "objectMetadataList" : [
+      [
+        "CA343C62-9115-45EC-878E-EA5457582B86",
+        "Rose_Petals_02"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "CB766F92-EE55-4A63-9401-E7B8C009764D" : {
+    "objectMetadataList" : [
+      [
+        "CB766F92-EE55-4A63-9401-E7B8C009764D",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
       [
         "CB766F92-EE55-4A63-9401-E7B8C009764D",
         "Root",
@@ -165,10 +251,14 @@
       {
         "isExpanded" : true,
         "isLocked" : false
-      },
+      }
+    ]
+  },
+  "D46E255F-FF28-473F-B965-3177DD57A760" : {
+    "objectMetadataList" : [
       [
-        "CB766F92-EE55-4A63-9401-E7B8C009764D",
-        "Root"
+        "D46E255F-FF28-473F-B965-3177DD57A760",
+        "Rose_Petals_01"
       ],
       {
         "isExpanded" : true,
@@ -177,53 +267,15 @@
     ]
   },
   "D560BB77-AAF3-4BDE-B7C4-989332A4688B" : {
-    "cameraTransform" : [
-      1,
-      0,
-      -0,
-      0,
-      -0,
-      0.8660253,
-      -0.5000001,
-      0,
-      0,
-      0.5000001,
-      0.8660253,
-      0,
-      0,
-      0.27093494,
-      0.4692731,
-      1
-    ],
     "objectMetadataList" : [
 
     ]
   },
   "D66134B1-3681-4A8E-AFE5-29F257229F3B" : {
-    "cameraTransform" : [
-      1,
-      0,
-      -0,
-      0,
-      -0,
-      0.7071069,
-      -0.7071067,
-      0,
-      0,
-      0.7071067,
-      0.7071069,
-      0,
-      0,
-      0.26894823,
-      0.26934713,
-      1
-    ],
     "objectMetadataList" : [
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root",
-        "GridMaterial",
-        "GridMaterial"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -231,7 +283,9 @@
       },
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root"
+        "Root",
+        "GridMaterial",
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,
