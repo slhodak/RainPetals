@@ -12,7 +12,6 @@ import DequeModule
 
 
 struct ImmersiveView: View {
-    @State var i = 0
     @State var rootEntity = Entity()
     @State var rainDrops = Deque<ModelEntity>()
     let rainTimer = Timer.publish(every: 0.005, on: .main, in: .common).autoconnect()
@@ -81,10 +80,6 @@ struct ImmersiveView: View {
     
     @MainActor
     func handleCollision(_ ce: CollisionEvents.Began) async {
-        i += 1
-        if i == 100 {
-            print(ce)
-        }
         var rainDropEntity: Entity? = nil
         if ce.entityA.name.contains("RainDrop") && !ce.entityB.name.contains("RainDrop") {
             rainDropEntity = ce.entityA
