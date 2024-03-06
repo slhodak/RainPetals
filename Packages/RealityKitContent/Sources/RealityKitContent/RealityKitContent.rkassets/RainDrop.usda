@@ -11,7 +11,7 @@ def Xform "RainDropTransform" (
     {
         reorder nameChildren = ["RainDropMaterial", "Transform"]
         rel material:binding = </RainDropTransform/RainDropMesh/RainDropMaterial>
-        double radius = 0.01
+        double radius = 1
         quatf xformOp:orient = (1, 0, 0, 0)
         float3 xformOp:scale = (1, 1, 1)
         float3 xformOp:translate = (0, 0, 0)
@@ -27,7 +27,8 @@ def Xform "RainDropTransform" (
             {
                 uniform token info:id = "UsdPreviewSurface"
                 color3f inputs:diffuseColor = (1, 1, 1)
-                float inputs:opacity = 0.2
+                float inputs:ior = 1
+                float inputs:opacity = 0
                 float inputs:roughness = 0
                 token outputs:surface
             }
