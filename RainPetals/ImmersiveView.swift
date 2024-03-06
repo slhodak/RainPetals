@@ -59,15 +59,15 @@ struct ImmersiveView: View {
         var raindropMaterial = PhysicallyBasedMaterial()
         raindropMaterial.baseColor = .init(tint: .white)
         raindropMaterial.roughness = 0.0
-        raindropMaterial.metallic = 0.1
-        raindropMaterial.blending = .transparent(opacity: 0.0)
+        raindropMaterial.metallic = 0.0
+        raindropMaterial.blending = .transparent(opacity: 0.1)
         let rainDrop = ModelEntity(mesh: mesh,
                                    materials: [raindropMaterial])
         rainDrop.components.set(CollisionComponent(shapes: [shape],
                                                    isStatic: false,
                                                    filter: CollisionFilter(group: rainGroup, mask: .all)))
         var physicsComponent = PhysicsBodyComponent()
-        physicsComponent.linearDamping = 3
+        physicsComponent.linearDamping = 5
         physicsComponent.massProperties.mass = 0.1
         rainDrop.components.set(physicsComponent)
         rainDrop.position = [Float.random(in: (-0.3)...(0.3)),
