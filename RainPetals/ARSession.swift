@@ -90,7 +90,10 @@ class ARSession {
 //            let materials = [UnlitMaterial(color: .blue)]
             let materials = [OcclusionMaterial()]
             let entity = ModelEntity(mesh: mesh, materials: materials)
-            entity.components.set(CollisionComponent(shapes: [shape], isStatic: true))
+            
+            entity.components.set(CollisionComponent(shapes: [shape],
+                                                     isStatic: true,
+                                                     filter: CollisionFilter(group: meshGroup, mask: .all)))
             entity.components.set(PhysicsBodyComponent())
 //            entity.components.set(OpacityComponent(opacity: 0.2))
             entity.transform = Transform(matrix: meshAnchor.originFromAnchorTransform)

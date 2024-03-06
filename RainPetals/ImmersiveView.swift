@@ -63,13 +63,16 @@ struct ImmersiveView: View {
         raindropMaterial.blending = .transparent(opacity: 0.0)
         let rainDrop = ModelEntity(mesh: mesh,
                                    materials: [raindropMaterial])
-        rainDrop.components.set(CollisionComponent(shapes: [shape]))
+        rainDrop.components.set(CollisionComponent(shapes: [shape],
+                                                   isStatic: false,
+                                                   filter: CollisionFilter(group: rainGroup, mask: .all)))
         var physicsComponent = PhysicsBodyComponent()
-        physicsComponent.linearDamping = 5
+        physicsComponent.linearDamping = 3
+        physicsComponent.massProperties.mass = 0.1
         rainDrop.components.set(physicsComponent)
-        rainDrop.position = [Float.random(in: -1...1),
+        rainDrop.position = [Float.random(in: (-0.3)...(0.3)),
                              Float.random(in: 2...2.5),
-                             Float.random(in: (-2)...(0))]
+                             Float.random(in: (-1.5)...(0))]
         rainDrop.name = "RainDrop"
         rootEntity.addChild(rainDrop)
     }
@@ -101,6 +104,12 @@ struct ImmersiveView: View {
             let randomPetal = Int.random(in: 1...9)
             let petalEntity = try await Entity(named: "rosePetals\(randomPetal)", in: realityKitContentBundle)
             petalEntity.position = rainDropEntity.position
+            if let petalModel = petalEntity.findEntity(named: "Mesh") {
+                petalModel.components[PhysicsBodyComponent.self]?.linearDamping = 1
+                petalModel.components[PhysicsBodyComponent.self]?.angularDamping = 1
+                petalModel.components[CollisionComponent.self]?.filter = petalFilter
+            }
+            
             rootEntity.addChild(petalEntity)
         } catch {
             print("Error loading rose petal")

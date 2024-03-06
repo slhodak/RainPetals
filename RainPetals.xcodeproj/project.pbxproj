@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170C6B502B9802F400D5B932 /* CollisionGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170C6B4F2B9802F400D5B932 /* CollisionGroups.swift */; };
 		17198A9E2B96600500338C73 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 17198A9D2B96600500338C73 /* RealityKitContent */; };
 		17198AA02B96600500338C73 /* RainPetalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17198A9F2B96600500338C73 /* RainPetalsApp.swift */; };
 		17198AA22B96600500338C73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17198AA12B96600500338C73 /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170C6B4F2B9802F400D5B932 /* CollisionGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionGroups.swift; sourceTree = "<group>"; };
 		17198A982B96600500338C73 /* RainPetals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainPetals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17198A9C2B96600500338C73 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		17198A9F2B96600500338C73 /* RainPetalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainPetalsApp.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				17198AAA2B96600600338C73 /* Info.plist */,
 				17198AA72B96600600338C73 /* Preview Content */,
 				171FBA792B97C96700D86EFC /* GeometrySource+Extensions.swift */,
+				170C6B4F2B9802F400D5B932 /* CollisionGroups.swift */,
 			);
 			path = RainPetals;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				171FBA7A2B97C96700D86EFC /* GeometrySource+Extensions.swift in Sources */,
 				17198AA02B96600500338C73 /* RainPetalsApp.swift in Sources */,
 				17198AA42B96600500338C73 /* ImmersiveView.swift in Sources */,
+				170C6B502B9802F400D5B932 /* CollisionGroups.swift in Sources */,
 				171FBA782B97C94D00D86EFC /* GraphicsUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
