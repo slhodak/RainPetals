@@ -13,7 +13,7 @@ import DequeModule
 
 struct ImmersiveView: View {
     @State var rootEntity = Entity()
-    let rainTimer = Timer.publish(every: 0.002, on: .main, in: .common).autoconnect()
+    let rainTimer = Timer.publish(every: 0.001, on: .main, in: .common).autoconnect()
     @State var collisionSubscription: EventSubscription?
     
     var body: some View {
@@ -100,11 +100,6 @@ struct ImmersiveView: View {
         do {
             let randomPetal = Int.random(in: 1...9)
             let petalEntity = try await Entity(named: "rosePetals\(randomPetal)", in: realityKitContentBundle)
-            // Prevents unnatural bouncing of petals -- but other methods to dampen physics would be better
-            if let petalModelEntity = petalEntity.findEntity(named: "Mesh") {
-                petalModelEntity.components[PhysicsBodyComponent.self]?.isTranslationLocked = (x: true, y: true, z: true)
-                petalModelEntity.components[PhysicsBodyComponent.self]?.isRotationLocked = (x: true, y: true, z: true)
-            }
             petalEntity.position = rainDropEntity.position
             rootEntity.addChild(petalEntity)
         } catch {
